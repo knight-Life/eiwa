@@ -1,0 +1,21 @@
+.section-inquiry {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-inquiry__contents {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 20%;
+  left: 22%;
+
+  a {
+    width: 37%;
+  }
+
+  a.section-inquiry__tel {
+    margin-right: 3%;
+    width: 32%;
+  }
+}

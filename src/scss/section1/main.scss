@@ -1,0 +1,23 @@
+section.section1 {
+  position: relative;
+}
+
+.section1-main{
+  &__tel {
+    display: block;
+    position: absolute;
+    width: 40%;
+    bottom: 17.7%;
+    right: 5%;
+    margin: auto;
+  }
+
+  &__link {
+    display: block;
+    position: absolute;
+    width: 40%;
+    bottom: 5%;
+    right: 5%;
+    margin: auto;
+  }
+}

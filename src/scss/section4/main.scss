@@ -1,0 +1,35 @@
+.section4 {
+  background: #F6DBD2;
+  padding: 40px 9%;
+  margin-bottom: 80px;
+}
+
+.section4-text {
+  width: 70%;
+  margin: 0 auto 32px;
+}
+
+ul.section4-check__list {
+
+  li {
+    position: relative;
+    margin: auto;
+    margin-bottom: 2%;
+    padding-left: 5%;
+    font-size: 2.2vw;
+    line-height: 2.2vw;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url(./image/section4/section4_check.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-top: 4%;
+      width: 4%;
+      top: -20%;
+      left: 0;
+    }
+  }
+}

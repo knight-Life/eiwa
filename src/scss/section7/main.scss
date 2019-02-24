@@ -1,0 +1,55 @@
+.section7 {
+  padding-top: 48px;
+  margin-bottom: 32px;
+}
+
+.section7-voice {
+  width: 90%;
+  margin: 0 auto 32px;
+
+  &__area {
+    width: 89%;
+    display: flex;
+    margin: auto;
+    padding-bottom: 32px;
+    margin-bottom: 48px;
+    border-bottom: 1px dotted;
+
+    &.voice3 {
+      border-bottom: none;
+    }
+
+    p {
+      font-size: 1.7vw;
+      line-height: 2.4vw;
+    }
+  }
+
+  &__photo {
+    width: 20%;
+    height: 20%;
+    padding-right: 2%;
+  }
+}
+
+
+.section7-voice__header {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #fc3000;
+
+  h3 {
+    font-weight: bold;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    width: 50%;
+  }
+
+  p {
+    margin-left: auto;
+    width: auto;
+    font-size: 1.7vw;
+  }
+}

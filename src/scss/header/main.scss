@@ -1,0 +1,58 @@
+.header{
+  width: 90%;
+  margin: auto;
+  padding-top: 24px;
+
+  h1 {
+    width: 25%;
+    margin-right: 15%;
+  }
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__tel {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+  }
+
+  &__link {
+    width: 25%;
+    margin-left: 2%;
+    display: block;
+    margin-left: auto;
+  }
+}
+
+
+.header-nav {
+  padding-top: 24px;
+}
+
+ul.header-nav__list {
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 8px 15px 0px #bbb;
+
+  li {
+    width: 14.28%;
+    text-align: center;
+    background: #fc3000;
+    border-left: 1px solid #fff;
+
+    &:first {
+      border-left: none;
+    }
+
+    a {
+      padding: 16px 4px;
+      display: block;
+      color: #fff;
+      font-size: 1vw;
+    }
+  }
+}
