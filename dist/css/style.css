@@ -1,31 +1,5 @@
-@charset "UTF-8";
-main {
-  padding-top: 64px;
-}
-
 a {
   text-decoration: none;
-}
-
-h2.headline {
-  background-color: #fc3000;
-  color: #fff;
-  padding: 2.5%;
-  width: 83%;
-  font-size: 3.2vw;
-  font-weight: bold;
-  text-align: center;
-  -webkit-box-shadow: 5px 6px 8px 0px #afafaf;
-          box-shadow: 5px 6px 8px 0px #afafaf;
-}
-
-.fixed {
-  top: 0 !important;
-}
-
-.fixed ul {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
 }
 
 .header {
@@ -37,8 +11,6 @@ h2.headline {
 .header h1 {
   width: 25%;
   margin-right: 15%;
-  font-size: 2vw;
-  font-family: "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif;
 }
 
 .header-top {
@@ -67,20 +39,10 @@ h2.headline {
   margin-left: 2%;
   display: block;
   margin-left: auto;
-  font-size: 3vw;
-  font-weight: bold;
-  text-align: center;
-  background-color: #fd3300;
-  color: #fff;
-  padding: 2%;
-  border-radius: 4px;
 }
 
 .header-nav {
   padding-top: 24px;
-  position: fixed;
-  width: 90%;
-  z-index: 1;
 }
 
 ul.header-nav__list {
@@ -103,7 +65,7 @@ ul.header-nav__list li {
   border-left: 1px solid #fff;
 }
 
-ul.header-nav__list li:first-child {
+ul.header-nav__list li:first {
   border-left: none;
 }
 
@@ -136,36 +98,9 @@ section.section1 {
   margin: auto;
 }
 
-.section2 h2 {
-  font-size: 3.4vw;
-  font-family: "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif;
-  text-align: center;
-  line-height: 5vw;
-}
-
-h2.section2-text {
+img.section2-text {
   width: 70%;
   margin: 32px auto;
-  font-size: 3.4vw;
-  font-family: "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif;
-  text-align: center;
-  line-height: 5vw;
-}
-
-h2.section2-text span {
-  position: relative;
-}
-
-h2.section2-text span::before {
-  content: "";
-  position: absolute;
-  background-image: url(./image/section2/section2_baloon.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-bottom: 10%;
-  width: 35%;
-  left: -38%;
-  top: -30%;
 }
 
 ul.section2-check__list {
@@ -186,7 +121,7 @@ ul.section2-check__list li::before {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(./image/section2/section2_check.png);
+  background-image: url(../image/section2/section2_check.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 4%;
@@ -200,13 +135,9 @@ ul.section2-check__list li::before {
   margin-bottom: 64px;
 }
 
-.section3 h2.section3-text {
-  width: 80%;
-  margin: 32px auto;
-  font-size: 3.4vw;
-  font-family: "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif;
-  text-align: center;
-  line-height: 5vw;
+.section3 .section3-text {
+  width: 70%;
+  margin: auto;
 }
 
 .section3 .section3-main {
@@ -228,13 +159,9 @@ ul.section2-check__list li::before {
   margin-bottom: 80px;
 }
 
-h2.section4-text {
-  width: 80%;
-  margin: 32px auto;
-  font-size: 3.4vw;
-  font-family: "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif;
-  text-align: center;
-  line-height: 5vw;
+.section4-text {
+  width: 70%;
+  margin: 0 auto 32px;
 }
 
 ul.section4-check__list li {
@@ -250,7 +177,7 @@ ul.section4-check__list li::before {
   content: "";
   position: absolute;
   display: block;
-  background-image: url(./image/section4/section4_check.png);
+  background-image: url(../image/section4/section4_check.png);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 4%;
@@ -264,11 +191,12 @@ ul.section4-check__list li::before {
 }
 
 .section5-speed {
-  margin: 0 auto 48px;
+  width: 90%;
+  margin: 0 auto 16px;
 }
 
 .section5-speed__recomme {
-  width: 75%;
+  width: 80%;
   margin: 0 auto 24px;
 }
 
@@ -277,71 +205,8 @@ ul.section4-check__list li::before {
   margin: 0 auto 64px;
 }
 
-h2.section5-speed.headline {
-  position: relative;
-}
-
-h2.section5-speed.headline::after {
-  content: "";
-  position: absolute;
-  background-image: url(./image/section5/section5_speed_icon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-bottom: 15%;
-  width: 15%;
-  left: 1%;
-  top: -27%;
-}
-
-h3.section5-speed__baloon {
-  position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 12px;
-  background-color: #f48d00;
-  color: #fff;
-  font-size: 2.8vw;
-  border-radius: 8px;
-  margin-bottom: 32px;
-}
-
-h3.section5-speed__baloon::after {
-  content: "";
-  position: absolute;
-  border: 15px solid transparent;
-  border-top: 15px solid #f48d00;
-  border-right: 15px solid #f48d00;
-  bottom: -40%;
-  left: 20%;
-}
-
-ul.section5-speed__checkList {
-  width: 90%;
-  padding-left: 17%;
-}
-
-ul.section5-speed__checkList li {
-  position: relative;
-  margin-bottom: 12px;
-  font-size: 2vw;
-}
-
-ul.section5-speed__checkList li::before {
-  content: "";
-  position: absolute;
-  display: block;
-  background-image: url(./image/section4/section4_check.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 3.8%;
-  width: 3.8%;
-  top: -35%;
-  left: -5%;
-}
-
 .section5-plan {
+  width: 90%;
   margin: 0 auto 32px;
 }
 
@@ -356,6 +221,7 @@ ul.section5-speed__checkList li::before {
 }
 
 .section6-flow {
+  width: 90%;
   margin: 0 auto 32px;
 }
 
@@ -370,6 +236,7 @@ ul.section5-speed__checkList li::before {
 }
 
 .section7-voice {
+  width: 90%;
   margin: 0 auto 32px;
 }
 
@@ -433,6 +300,7 @@ ul.section5-speed__checkList li::before {
 }
 
 .section8-faq {
+  width: 90%;
   margin: 0 auto 32px;
 }
 
@@ -468,7 +336,7 @@ ul.section5-speed__checkList li::before {
 .section8-faq__area > div::before {
   content: "";
   position: absolute;
-  background-image: url(./image/section8/section8_q.png);
+  background-image: url(../image/section8/section8_q.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -545,4 +413,3 @@ ul.section5-speed__checkList li::before {
   margin-right: 3%;
   width: 32%;
 }
-

@@ -1,6 +1,35 @@
-img.section2-text {
+.section2 {
+  h2 {
+    font-size: 3.4vw;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    text-align: center;
+    line-height: 5vw;
+  }
+}
+
+h2.section2-text {
   width: 70%;
   margin: 32px auto;
+  font-size: 3.4vw;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  text-align: center;
+  line-height: 5vw;
+
+  span {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(./image/section2/section2_baloon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-bottom: 10%;
+      width: 35%;
+      left: -38%;
+      top: -30%;
+    }
+  }
 }
 
 ul.section2-check__list {

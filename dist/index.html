@@ -24,9 +24,11 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <h1><img src="./image/header/header_eiwa_logo.png" alt="栄和エステート株式会社"></h1>
+      <!-- <h1><img src="./image/header/header_eiwa_logo.png" alt="栄和エステート株式会社"></h1> -->
+      <h1>栄和エステート株式会社</h1>
       <a class="header-top__tel header-resp__pc" href=""><img src="./image/header/header_tel.png" alt="問い合わせ電話番号"></a>
-      <a class="header-top__link header-resp__pc" href=""><img src="./image/header/header_link.png" alt="今すぐ無料査定"></a>
+      <!-- <a class="header-top__link header-resp__pc" href=""><img src="./image/header/header_link.png" alt="今すぐ無料査定"></a> -->
+      <a class="header-top__link header-resp__pc" href=""><span>今すぐ無料査定</span></a>
     </div>
 
     <nav class="header-nav">
@@ -49,8 +51,7 @@
     </section>
 
     <section class="section2">
-      <h2><img class="section2-text" src="./image/section2/section2_text.png" alt="このようなお悩みの不動産オーナー様は、仲介ではなく直接買取をおすすめ致します。"></h2>
-
+      <h2 class="section2-text">このようなお悩みの不動産オーナー様は、<br><span>直接買取をおすすめ致します。</span></h2>
       <ul class="section2-check__list">
         <li>ご近所さん、友人等に不動産を売ることを知られたくない。</li>
         <li>遠方の不動産、相続した不動産を現状で売却したい。</li>
@@ -64,7 +65,7 @@
     </section>
 
     <section class="section3">
-      <h2><img class="section3-text" src="./image/section3/section3_text.png" alt="持っている不動産を早く現金化したいんだけど…"></h2>
+      <h2 class="section3-text">持っている不動産を早く現金化したいんだけど…</h2>
       <img class="section3-main" src="./image/section3/section3_main02.png" alt="section3メイン画像">
 
       <p>
@@ -77,8 +78,7 @@
     </section>
 
     <section class="section4">
-      <h2><img class="section4-text" src="./image/section4/section4_text.png" alt="こんな方はお気軽に弊社にご連絡を！"></h2>
-
+      <h2 class="section4-text">こんな方はお気軽に弊社にご連絡を！</h2>
       <ul class="section4-check__list">
         <li>ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</li>
         <li>ダミーダミーダミーダミーダミーダミーダミーダミー</li>
@@ -90,12 +90,20 @@
 
     <section class="section5">
       <div id="speed">
-        <h2><img class="section5-speed" src="./image/section5/section5_speed.png" alt="スピード買取"></h2>
-        <img class="section5-speed__recomme" src="./image/section5/section5_speed_recomme.png" alt="こんな方におすすめ">
+        <h2 class="section5-speed headline">スピード買取</h2>
+        <div class="section5-speed__recomme">
+          <h3 class="section5-speed__baloon">こんな方におすすめ</h3>
+          <ul class="section5-speed__checkList">
+            <li>売りたい時期が決まっている人</li>
+            <li>とにかく早く売却したい人</li>
+            <li>他社ですでに売りに出してて、ちょっとでも不安や不満がある人</li>
+          </ul>
+        </div>
+
         <img class="section5-speed__merit" src="./image/section5/section5_speed_merit.png" alt="私たちが選ばれる5つの理由・オーディン都市開発7つのメリット">
       </div>
       <div id="plan">
-        <h2><img class="section5-plan" src="./image/section5/section5_plan.png" alt="あなたにぴったりのプランをお選びいただけます。"></h2>
+        <h2 class="section5-plan headline"><span>あなたにぴったりのプランをお選びいただけます。</span></h2>
         <img class="section5-plan__choice" src="./image/section5/section5_plan_choice.png" alt="特急買取をご希望の方・通常買取をご希望の方">
       </div>
     </section>
@@ -109,7 +117,7 @@
     </section>
 
     <section id="flow" class="section6">
-      <h2><img class="section6-flow" src="./image/section6/section6_flow.png" alt="査定・買取の流れ"></h2>
+      <h2 class="section6-flow headline">査定・買取の流れ</h2>
 
       <img class="section6-flow__compare" src="./image/section6/section6_flow_compare.png" alt="特急買取の場合・通常買取の場合">
     </section>
@@ -122,8 +130,8 @@
       </div>
     </section>
 
-    <section class="section7">
-      <h2><img class="section7-voice" src="./image/section7/section7_voice.png" alt="お客様の声"></h2>
+    <section id="faq" class="section7">
+      <h2 class="section7-voice headline">お客様の声</h2>
 
       <div class="section7-voice__area voice1">
         <img class="section7-voice__photo" src="./image/section7/section7_customer01.png" alt="お客様01">
@@ -168,7 +176,7 @@
     </section>
 
     <section class="section8">
-      <h2 class="section8-faq"><img src="./image/section8/section8_faq.png" alt="よくあるご質問"></h2>
+      <h2 class="section8-faq headline">よくあるご質問</h2>
 
       <div class="section8-faq__area faq1">
         <div>
@@ -195,7 +203,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="company" class="footer">
     <section class="section-inquiry">
       <img class="section-inquiry__bg" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
       <div class="section-inquiry__contents">
@@ -220,5 +228,24 @@
       </div>
     </div>
   </footer>
+
+  <script>
+  $(function() {
+
+  	//ロード or スクロールされると実行
+  	$(window).on('load scroll', function(){
+
+  		//ヘッダーの高さ分(80px)スクロールするとfixedクラスを追加
+  		if ($(window).scrollTop() > 10) {
+  			$('nav').addClass('fixed');
+  		} else {
+  			//80px以下だとfixedクラスを削除
+  			$('nav').removeClass('fixed');
+  		}
+
+  	});
+
+  });
+  </script>
 </body>
 </html>

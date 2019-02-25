@@ -1,3 +1,26 @@
+main {
+  padding-top: 64px;
+}
+
 a {
   text-decoration: none;
+}
+
+h2.headline {
+  background-color: #fc3000;
+  color: #fff;
+  padding: 2.5%;
+  width: 83%;
+  font-size: 3.2vw;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 5px 6px 8px 0px #afafaf;
+}
+
+.fixed {
+  top : 0!important;
+}
+
+.fixed ul{
+  box-shadow: none!important;
 }

@@ -6,6 +6,8 @@
   h1 {
     width: 25%;
     margin-right: 15%;
+    font-size: 2vw;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   }
 }
 
@@ -25,12 +27,22 @@
     margin-left: 2%;
     display: block;
     margin-left: auto;
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fd3300;
+    color: #fff;
+    padding: 2%;
+    border-radius: 4px;
   }
 }
 
 
 .header-nav {
   padding-top: 24px;
+  position: fixed;
+  width: 90%;
+  z-index: 1;
 }
 
 ul.header-nav__list {
@@ -44,7 +56,7 @@ ul.header-nav__list {
     background: #fc3000;
     border-left: 1px solid #fff;
 
-    &:first {
+    &:first-child {
       border-left: none;
     }
 
