@@ -1,0 +1,13 @@
+@media screen and (max-width:768px) {
+  main {
+    padding-top: 0;
+  }
+
+  .main-resp__pc {
+    display: none!important
+  }
+
+  .main-resp__sp {
+    display: block;
+  }
+}

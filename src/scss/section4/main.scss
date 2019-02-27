@@ -1,12 +1,13 @@
 .section4 {
   background: #F6DBD2;
-  padding: 40px 9%;
-  margin-bottom: 80px;
+  padding: 0 9% 5%;
+  margin-bottom: 10%;
 }
 
 h2.section4-text {
   width: 80%;
-  margin: 32px auto;
+  padding-top: 4%;
+  margin: 0 auto 4%;
   font-size: 3.4vw;
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   text-align: center;
@@ -37,3 +38,5 @@ ul.section4-check__list {
     }
   }
 }
+
+@import "responsive";

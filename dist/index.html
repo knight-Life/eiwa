@@ -16,22 +16,29 @@
   <meta property="og:image" content="サムネイル画像のURL" />
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll-infinite.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="drawer drawer--right">
   <header class="header">
     <div class="header-top">
-      <!-- <h1><img src="./image/header/header_eiwa_logo.png" alt="栄和エステート株式会社"></h1> -->
       <h1>栄和エステート株式会社</h1>
       <a class="header-top__tel header-resp__pc" href=""><img src="./image/header/header_tel.png" alt="問い合わせ電話番号"></a>
-      <!-- <a class="header-top__link header-resp__pc" href=""><img src="./image/header/header_link.png" alt="今すぐ無料査定"></a> -->
       <a class="header-top__link header-resp__pc" href=""><span>今すぐ無料査定</span></a>
+
+
+      <button type="button" class="drawer-toggle drawer-hamburger header-resp__sp">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
     </div>
 
-    <nav class="header-nav">
+    <nav class="header-nav header-resp__pc">
       <ul class="header-nav__list">
         <li><a href="#top">TOP</a></li>
         <li><a href="#speed">スピード査定</a></li>
@@ -42,12 +49,36 @@
         <li><a href="#company">会社概要</a></li>
       </ul>
     </nav>
+    <nav class="drawer-nav header-resp__sp">
+      <ul>
+        <li class="drawer-toggle"><a href="#top">TOP</a></li>
+        <li class="drawer-toggle"><a href="#speed">スピード査定</a></li>
+        <li class="drawer-toggle"><a href="#plan">おすすめプラン</a></li>
+        <li class="drawer-toggle"><a href="#flow">査定・買取の流れ</a></li>
+        <li class="drawer-toggle"><a href="#voice">お客様の声</a></li>
+        <li class="drawer-toggle"><a href="#faq">売却Ｑ＆Ａ</a></li>
+        <li class="drawer-toggle"><a href="#company">会社概要</a></li>
+
+        <div class="header-drawer__info">
+          <a class="header-drawer__link" href=""><span>今すぐ無料査定</span></a>
+          <a class="header-drawer__tel" href=""><img src="./image/header/header_tel_white.png" alt="問い合わせ電話番号"></a>
+        </div>
+      </ul>
+    </nav>
   </header>
   <main>
     <section id="top" class="section1">
-      <img class="section1-main" src="./image/section1/section1_top02.png" alt="お手持ちの不動産を現金化">
-      <a class="section1-main__tel" href=""><img src="./image/section1/section1_tel.png" alt="問い合わせ電話番号"></a>
-      <a class="section1-main__link" href=""><img src="./image/section1/section1_link.png" alt="今すぐ無料査定"></a>
+      <img class="section1-main" src="./image/section1/section1_top03.png" alt="お手持ちの不動産を現金化">
+      <!-- <img class="section1-main main-resp__sp" src="./image/section1/section1_top02SP.png" alt="お手持ちの不動産を現金化"> -->
+      <div class="section1-main__feature">
+        <div class="section1-feature__01">
+          <img src="./image/section1/section1_tagSP.png" alt="手入れ一切不要">
+        </div>
+        <div class="section1-feature__02">
+          <a class="section1-main__tel" href=""><img src="./image/section1/section1_tel.png" alt="問い合わせ電話番号"></a>
+          <a class="section1-main__link" href=""><img src="./image/section1/section1_link.png" alt="今すぐ無料査定"></a>
+        </div>
+      </div>
     </section>
 
     <section class="section2">
@@ -100,19 +131,38 @@
           </ul>
         </div>
 
-        <img class="section5-speed__merit" src="./image/section5/section5_speed_merit.png" alt="私たちが選ばれる5つの理由・オーディン都市開発7つのメリット">
+        <img class="section5-speed__merit main-resp__pc" src="./image/section5/section5_speed_merit.png" alt="私たちが選ばれる5つの理由・オーディン都市開発7つのメリット">
+
+        <div class="section5-speed__meritSP">
+          <div>
+            <img class="section5-speed__merit main-resp__sp" src="./image/section5/section5_speed_merit_sp01.png" alt="私たちが選ばれる5つの理由">
+          </div>
+          <div>
+            <img class="section5-speed__merit main-resp__sp" src="./image/section5/section5_speed_merit_sp02.png" alt="オーディン都市開発7つのメリット">
+          </div>
+        </div>
       </div>
       <div id="plan">
         <h2 class="section5-plan headline"><span>あなたにぴったりのプランをお選びいただけます。</span></h2>
-        <img class="section5-plan__choice" src="./image/section5/section5_plan_choice.png" alt="特急買取をご希望の方・通常買取をご希望の方">
+        <img class="section5-plan__choice main-resp__pc" src="./image/section5/section5_plan_choice.png" alt="特急買取をご希望の方・通常買取をご希望の方">
+        <div class="section5-speed__meritSP">
+          <img class="section5-plan__choice main-resp__sp" src="./image/section5/section5_plan_choice_sp01.png" alt="特急買取をご希望の方">
+          <img class="section5-plan__choice main-resp__sp" src="./image/section5/section5_plan_choice_sp02.png" alt="通常買取をご希望の方">
+        </div>
       </div>
     </section>
 
     <section class="section-inquiry">
-      <img class="section-inquiry__bg" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
-      <div class="section-inquiry__contents">
+      <img class="section-inquiry__bg main-resp__pc" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__pc">
         <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel.png" alt="お問い合わせ電話番号"></a>
         <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link.png" alt="今すぐ無料査定"></a>
+      </div>
+
+      <img class="section-inquiry__bg main-resp__sp" src="./image/inquiry/inquiry_bg_sp.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__sp">
+        <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel_sp02.png" alt="お問い合わせ電話番号"></a>
+        <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link_sp.png" alt="今すぐ無料査定"></a>
       </div>
     </section>
 
@@ -123,14 +173,20 @@
     </section>
 
     <section class="section-inquiry">
-      <img class="section-inquiry__bg" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
-      <div class="section-inquiry__contents">
+      <img class="section-inquiry__bg main-resp__pc" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__pc">
         <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel.png" alt="お問い合わせ電話番号"></a>
         <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link.png" alt="今すぐ無料査定"></a>
       </div>
+
+      <img class="section-inquiry__bg main-resp__sp" src="./image/inquiry/inquiry_bg_sp.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__sp">
+        <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel_sp02.png" alt="お問い合わせ電話番号"></a>
+        <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link_sp.png" alt="今すぐ無料査定"></a>
+      </div>
     </section>
 
-    <section id="faq" class="section7">
+    <section id="voice" class="section7">
       <h2 class="section7-voice headline">お客様の声</h2>
 
       <div class="section7-voice__area voice1">
@@ -168,14 +224,20 @@
     </section>
 
     <section class="section-inquiry">
-      <img class="section-inquiry__bg" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
-      <div class="section-inquiry__contents">
+      <img class="section-inquiry__bg main-resp__pc" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__pc">
         <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel.png" alt="お問い合わせ電話番号"></a>
         <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link.png" alt="今すぐ無料査定"></a>
       </div>
+
+      <img class="section-inquiry__bg main-resp__sp" src="./image/inquiry/inquiry_bg_sp.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__sp">
+        <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel_sp02.png" alt="お問い合わせ電話番号"></a>
+        <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link_sp.png" alt="今すぐ無料査定"></a>
+      </div>
     </section>
 
-    <section class="section8">
+    <section id="faq" class="section8">
       <h2 class="section8-faq headline">よくあるご質問</h2>
 
       <div class="section8-faq__area faq1">
@@ -205,10 +267,16 @@
   </main>
   <footer id="company" class="footer">
     <section class="section-inquiry">
-      <img class="section-inquiry__bg" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
-      <div class="section-inquiry__contents">
+      <img class="section-inquiry__bg main-resp__pc" src="./image/inquiry/inquiry_bg.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__pc">
         <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel.png" alt="お問い合わせ電話番号"></a>
         <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link.png" alt="今すぐ無料査定"></a>
+      </div>
+
+      <img class="section-inquiry__bg main-resp__sp" src="./image/inquiry/inquiry_bg_sp.png" alt="スピード査定">
+      <div class="section-inquiry__contents main-resp__sp">
+        <a class="section-inquiry__tel" href=""><img src="./image/inquiry/inquiry_tel_sp02.png" alt="お問い合わせ電話番号"></a>
+        <a class="section-inquiry__link" href=""><img src="./image/inquiry/inquiry_link_sp.png" alt="今すぐ無料査定"></a>
       </div>
     </section>
 
@@ -232,18 +300,20 @@
   <script>
   $(function() {
 
-  	//ロード or スクロールされると実行
-  	$(window).on('load scroll', function(){
+    //ロード or スクロールされると実行
+    $(window).on('load scroll', function(){
 
-  		//ヘッダーの高さ分(80px)スクロールするとfixedクラスを追加
-  		if ($(window).scrollTop() > 10) {
-  			$('nav').addClass('fixed');
-  		} else {
-  			//80px以下だとfixedクラスを削除
-  			$('nav').removeClass('fixed');
-  		}
+      //ヘッダーの高さ分(80px)スクロールするとfixedクラスを追加
+      if ($(window).scrollTop() > 10) {
+        $('nav').addClass('fixed');
+      } else {
+        //80px以下だとfixedクラスを削除
+        $('nav').removeClass('fixed');
+      }
 
-  	});
+    });
+
+    $('.drawer').drawer();
 
   });
   </script>

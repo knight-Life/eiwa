@@ -1,0 +1,17 @@
+@media screen and (max-width:768px) {
+  .section-inquiry__contents {
+    flex-direction: column;
+    width: 78%;
+    top: 12%;
+
+    a {
+      width: 95%;
+
+      &.section-inquiry__tel {
+        margin-right: 0;
+        width: 95%;
+        margin-bottom: 2%;
+      }
+    }
+  }
+}

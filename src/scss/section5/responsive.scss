@@ -1,0 +1,35 @@
+@media screen and (max-width:768px) {
+  .section5-speed__meritSP {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  ul.section5-speed__checkList {
+    padding-left: 10%;
+
+    li {
+      font-size: 2.5vw;
+      line-height: 3.5vw;
+
+      &::before {
+        top: 5%;
+      }
+    }
+  }
+
+  h3.section5-speed__baloon {
+    position: relative;
+    margin-bottom: 25px;
+    left: -6%;
+
+    &::after {
+      content: "";
+      left: 10%;
+    }
+  }
+
+  .section5-speed__merit {
+    margin: 0 auto 10%;
+  }
+}

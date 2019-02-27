@@ -1,5 +1,5 @@
 .section5 {
-  margin-bottom: 64px;
+  margin-bottom: 8%;
 }
 
 .section5-speed {
@@ -45,9 +45,9 @@ h3.section5-speed__baloon {
   &::after {
     content: "";
     position: absolute;
-    border: 15px solid transparent;
-    border-top: 15px solid #f48d00;
-    border-right: 15px solid #f48d00;
+    border: 10px solid transparent;
+    border-top: 10px solid #f48d00;
+    border-right: 10px solid #f48d00;
     bottom: -40%;
     left: 20%;
   }
@@ -87,3 +87,10 @@ ul.section5-speed__checkList li::before {
     margin: auto;
   }
 }
+
+
+.section5-speed__meritSP {
+  display: none;
+}
+
+@import "responsive";
